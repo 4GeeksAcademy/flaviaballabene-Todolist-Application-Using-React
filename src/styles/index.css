@@ -1,7 +1,7 @@
 body {
   display: flex;
   justify-content: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: andale mono, monospace;
   color: rgb(226, 166, 186);
 }
 h1 {
