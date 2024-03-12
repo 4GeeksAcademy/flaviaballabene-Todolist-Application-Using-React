@@ -16,7 +16,7 @@ const Home = () => {
             onChange={(e) => setInputValue(e.target.value)}
             value={inputValue}
             onKeyPress={(e) => {
-              if (e.key === "Enter") {
+              if (e.key === "Enter" && inputValue.trim() !== "") {
                 setTodos(todos.concat(inputValue));
                 setInputValue("");
               }
@@ -25,7 +25,7 @@ const Home = () => {
         </li>
         {todos.map((item, index) => (
           <li className="list-group-item">
-            {item}{" "}
+            {item}
             <svg
               onClick={() =>
                 setTodos(
